@@ -1,0 +1,539 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Styling */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* General */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-48 {
+  flex: 0 1 48%;
+  margin: 24px 0;
+  padding-right: 12px;
+}
+
+.flex-15 {
+  flex: 0 1 15%;
+}
+
+.flex-80 {
+  flex: 0 1 80%;
+}
+
+.flex-25 {
+  flex: 0 1 25%;
+  margin: 0 10px;
+}
+
+.flex-65 {
+  flex: 0 1 65%;
+}
+
+.flex-50 {
+  flex: 0 1 50%;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --primary: #ED563A;
+  --textHeading: #232D38;
+  --textPara: #717171;
+}
+
+.padding {
+  padding: 60px 0;
+}
+
+.section-header {
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  color: var(--textHeading);
+  margin-bottom: 10px;
+}
+
+.section-header span {
+  color: var(--primary);
+}
+
+.section-header p {
+  font-size: 12px;
+  color: var(--textPara);
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* Header */
+
+.header {
+  padding: 15px 0;  
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background: rgba(93, 99, 105, 0.4);
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: 800;
+  color: #dfdfdf;
+}
+
+.brand span {
+  color: var(--primary);
+}
+
+.navbar a {
+  margin-left: 44px;
+  font-size: 12px;
+  color: #dfdfdf;
+  font-weight: 600;
+}
+
+.navbar .active {
+  color: var(--primary);
+}
+
+.btn {
+  padding: 8px 18px;
+  background-color: var(--primary);
+  color: #ffffff;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Hero */
+
+.hero video {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.bgvideo {
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(45, 57, 68, 0.8);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero h4, .hero h1 {
+  color: #ffffff;
+}
+
+.hero h4 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.hero span {
+  color: var(--primary);
+}
+
+/* Features */
+
+.features-list {
+  margin-top: 70px;
+}
+
+.icon-wrapper {
+  background-color: var(--primary);
+  align-self: stretch;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.features-box i {
+  font-size: 30px;
+  transform: rotate(-40deg);
+}
+
+.features-box h3 {
+  color: var(--textHeading);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.features-box p {
+  color: var(--textPara);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.features-box a {
+  font-size: 12px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* CTA */
+
+.cta {
+  text-align: center;
+  background: url(../media/cta-bg.jpg) center center no-repeat,
+  rgba(45, 57, 68, 0.8);
+  height: 300px;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
+
+.cta-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cta-content h2 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 10px;
+} 
+
+.cta-content span {
+  color: var(--primary);
+}
+
+.cta-content p {
+  color: #dfdfdf;
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/* Training */
+
+.training-wrapper i {
+  color: var(--primary);
+  transform: rotate(-35deg);
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+.training-wrapper {
+  padding: 28px 0;
+  padding-right: 28px;
+  padding-left: 20px;
+  box-shadow: 1px 1px 3px rgb(197, 197, 197);
+  border: 0;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.training-wrapper span {
+  font-size: 14px;
+  color: var(--textHeading);
+  font-weight: 600;
+  display: block;
+}
+
+.training-wrapper .active {
+  color: var(--primary);
+}
+
+.training button {
+  width: 100%;
+  border: 0;
+  padding: 18px 14px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+aside, article {
+  align-self: stretch;
+}
+
+article img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+article h3 {
+  color: var(--textHeading);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+article p {
+  color: var(--textPara);
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+/* Schedule */
+
+.schedule {
+  background: url(../media/schedule-bg.jpg) center center no-repeat,
+  rgba(45, 57, 68, 0.8);
+}
+
+.schedule h2 {
+  color: #ffffff;
+}
+
+.schedule p {
+  color: #dfdfdf;
+}
+
+.schedule a {
+  color: #dfdfdf;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.schedule .active {
+  color: var(--primary);
+}
+
+.schedule span {
+  margin: 0 8px;
+  color: #dfdfdf;
+}
+
+table {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  color: #dfdfdf;
+  border: 0.5px solid #dfdfdf;
+}
+
+td {
+  padding: 30px 40px;
+  border: 0.5px solid #dfdfdf;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Trainers */
+
+.trainer-info {
+  margin-top: 70px;
+}
+
+.trainer-card {
+  padding: 20px;
+  box-shadow: 1px -1px 8px rgba(191, 197, 202, 0.8);
+}
+
+.trainer-card h4 {
+  font-size: 14px;
+  color: var(--primary);
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.trainer-card h2 {
+  color: var(--textHeading);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.trainer-card p {
+  color: var(--textPara);
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.trainer-card i {
+  font-size: 14px;
+  color: var(--textHeading);
+  margin-right: 10px;
+}
+
+/* Contact*/
+
+.contact .flex-50 {
+  font-size: 0;
+}
+
+.form-bg {
+  background: url(../media/contact-bg.jpg) center center no-repeat,
+  rgba(45, 57, 68, 0.8);
+  height: 400px;
+  object-fit: cover;
+}
+
+form {
+  position: absolute;
+  left: 820px;
+}
+
+fieldset {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 6px;
+  outline: 0;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+
+.form-control {
+  padding: 5px 24px;
+  border: 0.1px solid #e4e1e1;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+
+.form .btn {
+  display: inline-block;
+  width: auto;
+  outline: 0;
+  border: 0;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 10px;
+}
+
+.footer span {
+  color: var(--primary);
+}
