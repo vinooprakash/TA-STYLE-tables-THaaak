@@ -15,7 +15,7 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
+  <header id="header" class="header">
     <div class="container flex">
       <a class="brand" href="#">
         TRAINING <span>STUDIO</span>
@@ -23,16 +23,19 @@
       <nav class="navbar">
         <ul class="flex">
           <li>
-            <a class="active" href="#">HOME</a>
+            <a class="active" href="#header">HOME</a>
           </li>
           <li>
-            <a href="#">ABOUT</a>
+            <a href="#about">ABOUT</a>
           </li>
           <li>
-            <a href="#">CLASSES</a>
+            <a href="#classes">CLASSES</a>
           </li>
           <li>
-            <a href="#">SCHEDULES</a>
+            <a href="#schedule">SCHEDULES</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT</a>
           </li>
           <li>
             <a class="btn" href="#">SIGNUP</a>
@@ -138,7 +141,7 @@
       </div>
     </section>
     <!-- Training -->
-    <section class="training">
+    <section id="classes" class="training">
       <div class="container padding">
         <div class="section-header">
           <h2>OUR <span>CLASSES</span></h2>
@@ -171,20 +174,34 @@
       </div>
     </section>
     <!-- Schedule -->
-    <section class="schedule padding">
+    <section id="schedule" class="schedule padding">
       <div class="section-header">
         <h2>CLASSES <span>SCHEDULE</span></h2>
         <img src="/assets/media/line-dec.png" alt="">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatibus <br> perspiciatis ad odit, officia vel.</p>
       </div>
       <div class="container">
-        <div class="evenly">
-          <a href="#">Monday /</a>
-          <a href="#">Tuesday / </a>
-          <a href="#">Wednesday / </a>
-          <a href="#">Thursday / </a>
-          <a href="#">Friday</a> 
-        </div>
+        <ul class="flex justify-center">
+          <li>
+            <a class="active" href="#">Monday</a>
+            <span>/</span>
+          </li>
+          <li>
+            <a href="#">Tuesday</a>
+            <span>/</span>
+          </li>
+          <li>
+            <a href="#">Wednesday</a>
+            <span>/</span>
+          </li>
+          <li>
+            <a href="#">Thursday</a>
+            <span>/</span>
+          </li>
+          <li>
+            <a href="#">Friday</a>
+          </li>
+        </ul>
         <table>
           <tr>
             <td>Fitness Class</td>
@@ -220,7 +237,7 @@
       </div>
     </section>
     <!-- Trainers -->
-    <section class="trainers padding">
+    <section id="about" class="trainers padding">
       <div class="section-header">
         <h2>EXPERT  <span>TRAINERS</span></h2>
         <img src="/assets/media/line-dec.png" alt="">
@@ -268,7 +285,7 @@
       </div>
     </section>
     <!-- Contact -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="flex">
         <div class="map flex-50">
           <figure>

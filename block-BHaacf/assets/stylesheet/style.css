@@ -49,6 +49,10 @@ table {
 
 /* Custom Styling */
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* General */
 *,
 *::before,
@@ -117,6 +121,10 @@ body {
   align-self: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .around {
   display: flex;
   justify-content: space-around;
@@ -181,7 +189,7 @@ a {
 }
 
 .navbar a {
-  margin-left: 16px;
+  margin-left: 44px;
   font-size: 12px;
   color: #dfdfdf;
   font-weight: 600;
@@ -404,8 +412,17 @@ article p {
 
 .schedule a {
   color: #dfdfdf;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.schedule .active {
+  color: var(--primary);
+}
+
+.schedule span {
+  margin: 0 8px;
+  color: #dfdfdf;
 }
 
 table {
